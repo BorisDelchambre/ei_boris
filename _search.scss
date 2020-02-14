@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'ex_cepegra';
+    src: url('/content/fonts/icon_fonts/webfonts/ex_cepegra.ttf') format('truetype');
+    }
+  
+    @font-face {
+      font-family: 'codeconf';
+      src: url('/content/fonts/font-icon/webfonts/codeconf.woff') format('woff');
+    }
+    
+    
+
+
+
+.search-button {
+  display: block;
+  width: 30px;
+  height:30px;
+  position: relative;
+  
+}
+
+
+
+.search-button:before {
+  content: "\e901";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-family: 'codeconf';
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+
+

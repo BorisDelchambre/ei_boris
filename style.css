@@ -164,10 +164,133 @@
   src: url("/font/Montserrat-ExtraBold.ttf") format("truetype");
 }
 
+.ham-button {
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  z-index: 9999;
+  margin: 10px;
+}
+
+.menu-nav {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 9999;
+}
+
+.ham-button :nth-child(1),
+.ham-button :nth-child(2),
+.ham-button :nth-child(3) {
+  display: block;
+  position: absolute;
+  height: 4px;
+  background-color: black;
+  right: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.ham-button :nth-child(1) {
+  width: 35px;
+  top: 0;
+}
+
+.ham-button :nth-child(2) {
+  width: 40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.ham-button :nth-child(3) {
+  width: 20px;
+  bottom: 0;
+}
+
+@font-face {
+  font-family: 'ex_cepegra';
+  src: url("/content/fonts/icon_fonts/webfonts/ex_cepegra.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'codeconf';
+  src: url("/content/fonts/font-icon/webfonts/codeconf.woff") format("woff");
+}
+
+.search-button {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.search-button:before {
+  content: "\e901";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'codeconf';
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+img {
+  width: 30%;
+}
+
 header {
   background-image: url(content/images/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+}
+
+.main-nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: #00d8ff;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .main-nav-list {
@@ -184,7 +307,21 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-right: 25px;
+  padding-right: 20px;
+}
+
+.logo-principal img {
+  position: Absolute;
+  width: 100%;
+}
+
+.logo-principal {
+  width: 200px;
+  height: 150px;
+  display: block;
+  overflow: hidden;
+  margin: 20px;
+  position: relative;
 }
 
 ul {
@@ -197,10 +334,54 @@ a {
   color: black;
 }
 
+.main-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+
+.main-description .calltoaction {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: white;
+  padding: 0px;
+  border-radius: 50px;
+  background-color: #00D8FF;
+  text-align: center;
+}
+
+.read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+
 .lieu {
   font-family: 'Museo';
   font-weight: 500;
-  color: #737B80;
+  color: #00d8ff;
 }
 
 strong {
@@ -251,12 +432,6 @@ strong {
 
 img {
   max-width: 411px;
-}
-
-.calltoaction {
-  font-family: 'Montserrat';
-  font-weight: 800;
-  color: #00D8FF;
 }
 
 .ActivityDescription {

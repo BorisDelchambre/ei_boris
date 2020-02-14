@@ -1,11 +1,33 @@
 
 @import 'fonts';
+@import 'hamburger';
+@import 'search';
 
+img {
+    width: 30%;
+}
 
 header {
     background-image:url(content/images/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
+}
+
+.main-nav {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #00d8ff;
+    align-items: flex-end;
+    justify-content: flex-end;
+
 }
 
 
@@ -16,10 +38,24 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-right: 25px;
+    padding-right: 20px;
 }
 
 
+.logo-principal img {
+    position: Absolute;
+    width: 100%;
+
+}
+
+.logo-principal {
+    width: 200px;
+    height: 150px;
+    display: block;
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+}
 
 
 
@@ -33,10 +69,38 @@ a {
     color: black;
 }
 
+.main-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+
+.main-description .calltoaction {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: white;
+    padding: 0px;
+    border-radius: 50px;
+    background-color: #00D8FF;
+    text-align: center;
+}
+
+.read-more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+}
+
 .lieu {
     font-family: 'Museo';
     font-weight: 500;
-    color: #737B80;
+    color: #00d8ff;
 }
 
 strong{
@@ -89,15 +153,12 @@ strong {
     display: none;
 }
 
+
+
 img {
     max-width: 411px;
 }
 
-.calltoaction {
-    font-family: 'Montserrat';
-    font-weight: 800;
-    color: #00D8FF;
-}
 
 .ActivityDescription {
     font-family: 'Montserrat';
