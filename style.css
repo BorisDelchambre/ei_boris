@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'Museo';
+  font-weight: 300;
+  src: url("/font/Museo300-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo';
+  font-weight: 500;
+  src: url("/font/Museo500-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Museo';
+  font-weight: 700;
+  src: url("/font/Museo8700-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-weight: 900;
+  src: url("/font/MavenPro-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-weight: 700;
+  src: url("/font/MavenPro-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-weight: 500;
+  src: url("/font/MavenPro-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-weight: 400;
+  src: url("/font/MavenPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  src: url("/font/Montserrat-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-weight: 900;
+  font-style: italic;
+  src: url("/font/Montserrat-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-style: italic;
+  src: url("/font/Montserrat-ThinItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-style: italic;
+  src: url("/font/Montserrat-ThinItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  src: url("/font/Montserrat-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 350;
+  font-style: italic;
+  src: url("/font/Montserrat-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 350;
+  src: url("/font/Montserrat-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: italic;
+  src: url("/font/Montserrat-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: url("/font/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: italic;
+  src: url("/font/Montserrat-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  src: url("/font/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: italic;
+  src: url("/font/Montserrat-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  src: url("/font/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 750;
+  font-style: italic;
+  src: url("/font/Montserrat-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 750;
+  src: url("/font/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-style: italic;
+  src: url("/font/Montserrat-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  src: url("/font/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-weight: 850;
+  font-style: italic;
+  src: url("/font/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 850;
+  src: url("/font/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+header {
+  background-image: url(content/images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-nav-list {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #284e68;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 25px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.lieu {
+  font-family: 'Museo';
+  font-weight: 500;
+  color: #737B80;
+}
+
+strong {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #737B80;
+}
+
+h2 > .date {
+  font-family: 'MavenPro';
+  font-weight: 500;
+  color: #00D8FF;
+}
+
+h2 > .date > strong {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #00D8FF;
+}
+
+h2 {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #00D8FF;
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: #00D8FF;
+}
+
+h4 {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #EBE3A6;
+}
+
+strong {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #737B80;
+}
+
+.header-txt {
+  display: none;
+}
+
+img {
+  max-width: 411px;
+}
+
+.calltoaction {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #00D8FF;
+}
+
+.ActivityDescription {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: 300;
+  color: #d8d8d8;
+}
+/*# sourceMappingURL=style.css.map */

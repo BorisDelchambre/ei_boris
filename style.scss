@@ -1,0 +1,107 @@
+
+@import 'fonts';
+
+
+header {
+    background-image:url(content/images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.main-nav-list {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #284e68;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 25px;
+}
+
+
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.lieu {
+    font-family: 'Museo';
+    font-weight: 500;
+    color: #737B80;
+}
+
+strong{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #737B80;
+}
+
+h2 > .date{ // AUGUST 
+    font-family: 'MavenPro';
+    font-weight: 500;
+    color: #00D8FF;
+}
+
+h2 > .date > strong {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #00D8FF;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #00D8FF;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #00D8FF;
+}
+
+h4 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #EBE3A6;
+}
+
+
+strong {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #737B80;
+}
+
+
+
+
+.header-txt {
+    display: none;
+}
+
+img {
+    max-width: 411px;
+}
+
+.calltoaction {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #00D8FF;
+}
+
+.ActivityDescription {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(216, 216, 216);
+}
