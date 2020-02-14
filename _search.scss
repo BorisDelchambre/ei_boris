@@ -8,18 +8,22 @@
       src: url('/content/fonts/font-icon/webfonts/codeconf.woff') format('woff');
     }
     
-    
-
-
-
 .search-button {
   display: block;
   width: 30px;
   height:30px;
-  position: relative;
-  
+  position: relative;  
 }
 
+.submit-recherche {
+  position: absolute;
+  opacity: 0%;
+}
+
+.search form {
+  position: absolute;
+  top: -200vh;
+}
 
 
 .search-button:before {

@@ -2,10 +2,9 @@
 @import 'fonts';
 @import 'hamburger';
 @import 'search';
+@import 'defaut';
 
-img {
-    width: 30%;
-}
+
 
 header {
     background-image:url(content/images/header.jpg);
@@ -14,8 +13,12 @@ header {
     width: 100vw;
 }
 
+
+
+
+
 .main-nav {
-    position: fixed;
+
     display: flex;
     top: 0;
     left: 0;
@@ -24,10 +27,14 @@ header {
     width: 100vw;
     height: 100vh;
     z-index: 9999;
-    background-color: #00d8ff;
+    background-color: #00d8fF; opacity:100%;
     align-items: flex-end;
     justify-content: flex-end;
+}
 
+.menu-nav {
+    position: fixed;
+    z-index: 10000;
 }
 
 
@@ -42,21 +49,16 @@ header {
 }
 
 
+
+
 .logo-principal img {
-    position: Absolute;
-    width: 100%;
-
-}
-
-.logo-principal {
     width: 200px;
     height: 150px;
     display: block;
     overflow: hidden;
-    margin: 20px;
+    margin: 0px;
     position: relative;
 }
-
 
 
 ul {

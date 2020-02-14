@@ -241,6 +241,16 @@
   position: relative;
 }
 
+.submit-recherche {
+  position: absolute;
+  opacity: 0%;
+}
+
+.search form {
+  position: absolute;
+  top: -200vh;
+}
+
 .search-button:before {
   content: "\e901";
   display: block;
@@ -261,8 +271,78 @@
   color: white;
 }
 
-img {
-  width: 30%;
+ul {
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  color: black;
+  background-color: none;
+}
+
+input {
+  border: none;
+  background-color: none;
+  color: black;
+}
+
+fieldset {
+  border: none;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -273,7 +353,6 @@ header {
 }
 
 .main-nav {
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,13 +363,19 @@ header {
   width: 100vw;
   height: 100vh;
   z-index: 9999;
-  background-color: #00d8ff;
+  background-color: #00d8fF;
+  opacity: 100%;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.menu-nav {
+  position: fixed;
+  z-index: 10000;
 }
 
 .main-nav-list {
@@ -311,16 +396,11 @@ header {
 }
 
 .logo-principal img {
-  position: Absolute;
-  width: 100%;
-}
-
-.logo-principal {
   width: 200px;
   height: 150px;
   display: block;
   overflow: hidden;
-  margin: 20px;
+  margin: 0px;
   position: relative;
 }
 
