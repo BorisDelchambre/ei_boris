@@ -170,7 +170,7 @@
   height: 25px;
   position: relative;
   z-index: 9999;
-  margin: 10px;
+  margin: 20px;
 }
 
 .menu-nav {
@@ -268,7 +268,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
+  color: black;
 }
 
 ul {
@@ -346,18 +346,40 @@ a {
 }
 
 header {
-  background-image: url(content/images/header.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(3.2%, rgba(244, 152, 179, 0.176)), color-stop(51.85%, rgba(0, 216, 255, 0.09)), color-stop(96.4%, rgba(40, 51, 59, 0))), url(content/images/header.jpg);
+  background-image: linear-gradient(0deg, rgba(244, 152, 179, 0.176) 3.2%, rgba(0, 216, 255, 0.09) 51.85%, rgba(40, 51, 59, 0) 96.4%), url(content/images/header.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   width: 100vw;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.img {
+  max-width: 25vw;
+  max-height: 25vh;
 }
 
 .main-nav {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   top: 0;
-  left: 0;
+  left: 100vw;
   padding: 0;
   margin: 0;
   width: 100vw;
@@ -374,8 +396,15 @@ header {
 }
 
 .menu-nav {
-  position: fixed;
+  position: absolute;
   z-index: 10000;
+  width: 100vw;
+  height: 70vw;
+}
+
+.main-nav-list li {
+  margin-top: 20px;
+  font-size: 30px;
 }
 
 .main-nav-list {
@@ -396,12 +425,11 @@ header {
 }
 
 .logo-principal img {
-  width: 200px;
-  height: 150px;
+  width: 350px;
   display: block;
   overflow: hidden;
-  margin: 0px;
-  position: relative;
+  margin: -20px;
+  position: static;
 }
 
 ul {
@@ -425,23 +453,48 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 25px;
   width: 100vw;
+  margin: 20px;
+  color: #00D8FF;
 }
 
 .main-description .calltoaction {
   font-family: 'Montserrat';
   font-weight: 800;
   color: white;
-  padding: 0px;
+  padding: 10px;
   border-radius: 50px;
+  width: 150px;
   background-color: #00D8FF;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+
+.calltoaction.title.activities {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  font-size: 30px;
 }
 
 .read-more {
+  font-family: 'Montserrat';
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,12 +509,17 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
+  color: white;
 }
 
 .lieu {
   font-family: 'Museo';
   font-weight: 500;
-  color: #00d8ff;
+  color: #737B80;
+}
+
+.lieu p {
+  margin-top: -10px;
 }
 
 strong {
@@ -472,7 +530,8 @@ strong {
 
 h2 > .date {
   font-family: 'MavenPro';
-  font-weight: 500;
+  font-size: 50pt;
+  font-weight: 800;
   color: #00D8FF;
 }
 
@@ -492,17 +551,13 @@ h3 {
   font-family: 'Montserrat';
   font-weight: 500;
   color: #00D8FF;
-}
-
-h4 {
-  font-family: 'Montserrat';
-  font-weight: 800;
-  color: #EBE3A6;
+  margin-top: 10px;
 }
 
 strong {
   font-family: 'Montserrat';
   font-weight: 800;
+  font-size: 30px;
   color: #737B80;
 }
 
@@ -512,12 +567,106 @@ strong {
 
 img {
   max-width: 411px;
+  display: none;
 }
 
 .ActivityDescription {
+  display: none;
   font-family: 'Montserrat';
   font-size: 15px;
   font-weight: 300;
   color: #d8d8d8;
+}
+
+h4 {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #EBE3A6;
+  display: none;
+}
+
+.activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+.figure {
+  position: relative;
+  width: 3px;
+}
+
+.more {
+  position: absolute;
+  right: 15px;
+  font-size: 50px;
+  color: #737B80;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(3.2%, rgba(244, 152, 179, 0.176)), color-stop(51.85%, rgba(0, 216, 255, 0.09)), color-stop(96.4%, rgba(40, 51, 59, 0))), url(content/images/brent-cox-mid.jpg);
+  background-image: linear-gradient(0deg, rgba(244, 152, 179, 0.176) 3.2%, rgba(0, 216, 255, 0.09) 51.85%, rgba(40, 51, 59, 0) 96.4%), url(content/images/brent-cox-mid.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 45px;
+  background-size: cover;
+  width: 100vw;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.calltoaction.title {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  height: 150px;
+  background-color: #00D8FF;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  -webkit-box-shadow: 0px 0px 10px #aaaaaa;
+          box-shadow: 0px 0px 10px #aaaaaa;
+}
+
+.pay-info {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #284e68;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  background-color: #00D8FF;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  -webkit-box-shadow: 0px 0px 10px #aaaaaa;
+          box-shadow: 0px 0px 10px #aaaaaa;
 }
 /*# sourceMappingURL=style.css.map */
