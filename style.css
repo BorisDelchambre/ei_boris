@@ -351,6 +351,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  scale: 100%;
   width: 100vw;
   height: 600px;
   display: -webkit-box;
@@ -567,7 +568,7 @@ strong {
   display: none;
 }
 
-img {
+.activity img {
   max-width: 411px;
   display: none;
 }
@@ -661,7 +662,7 @@ footer > .calltoaction.title {
   border-bottom-right-radius: 5px;
   width: 250px;
   height: 50px;
-  margin: 0px;
+  margin-bottom: 20px;
   background-color: #12212b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -810,7 +811,13 @@ footer h2 {
   color: white;
   font-family: 'Montserrat';
   font-weight: 700;
+  max-width: 300px;
   font-size: 16px;
+}
+
+footer .section .info-footer {
+  margin-top: 50px;
+  margin-left: 20px;
 }
 
 footer p {
@@ -818,9 +825,10 @@ footer p {
   font-weight: 500;
   font-size: 15px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   padding-left: 30px;
   color: white;
+  max-width: 300px;
 }
 
 footer.info-footer {
@@ -866,24 +874,48 @@ footer.info-footer {
   font-family: 'Montserrat';
   font-weight: 500;
   border-radius: 20px;
+  margin-left: 0px;
   width: 300px;
   height: 150px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
-  -webkit-box-align: column;
-      -ms-flex-align: column;
-          align-items: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-footer > social-media {
+.follow .social-media li h2 {
   font-family: 'Montserrat';
   font-weight: 500;
   color: #12212b;
+}
+
+.follow p {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  max-width: 100px;
+  max-height: 100px;
+  font-size: 20px;
+  color: #00D8FF;
+  margin-left: 15px;
+}
+
+.backlink {
+  max-width: 350px;
+  display: block;
+  margin-top: 75px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: static;
 }
 /*# sourceMappingURL=style.css.map */
