@@ -3,7 +3,8 @@
 @import 'hamburger';
 @import 'search';
 @import 'defaut';
-
+@import 'contact';
+@import 'desktop';
 
 
 header {
@@ -40,6 +41,7 @@ header {
 }
 
 .menu-nav {
+    display: none;
     position: absolute;
     z-index: 10000;
     width: 100vw;

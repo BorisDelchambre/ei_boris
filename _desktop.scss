@@ -10,21 +10,63 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+}
 
+.menu-nav {
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    z-index: 10000;
+    width: 100vw;
+    height: 50vw;
+}
+
+.main-nav {
+    position: static;
+    display: flex;
+    background: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 0px;
+    left: 0vw;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.ham-button {
+    display: none;
 }
 
 
-.menu-nav {
+.main-nav-list {
     top: 0;
-    left: 0;
-    margin:0;
-    padding:0;
-    width: 100vw;
+    color: pink;
+    font-family: 'Montserrat';
+    font-weight: 500;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position:relative;
-    z-index: 9999;
+    width: 30vw;
+    font-size: 20px;
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+.main-nav-list li {
+    margin-top: 150px;
+    font-size: 20px;
+}
+
+
+
+.search-button:before {
+    color: pink;
 }
 
 .logo-principal img {
@@ -73,6 +115,7 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 30px;
+}
 
 .main-description {
         display: flex;
@@ -85,27 +128,6 @@ header {
         color: #00D8FF;
 }
     
-  
-.ham-button {
-        display: none;
-    }
-    
-.main-nav-list li {
-    display:none;
-        margin-top: 20px;
-        font-size: 30px;
-    }
-    
-.main-nav-list {
-        font-family: 'Montserrat';
-        font-weight: 700;
-        color: #284e68;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        padding-right: 20px;
-    }
-}
 
 .calltoaction.title.activities {
     font-family: 'Montserrat';
@@ -179,19 +201,6 @@ h3 {
 }
 
 
-
-
-
-
-
-
-.info-footer {
-
-}
-
-
-
-
 .footer section {
     display: flex;
     flex-direction: column;
@@ -204,11 +213,7 @@ footer  h2 {
     display: flex;
     align-items: flex-end;
     padding-left: 30px;
-    
-
 }
-
-
 
 
 .follow {
@@ -224,4 +229,3 @@ footer  h2 {
     align-items: center;
     justify-content: flex-start;
 }
-
